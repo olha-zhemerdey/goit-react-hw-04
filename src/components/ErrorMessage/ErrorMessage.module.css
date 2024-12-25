@@ -1,0 +1,28 @@
+/* ErrorMessage.module.css */
+
+.errorContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+  padding: 15px;
+  background-color: #ffe6e6; /* Легкий червоний фон */
+  border: 1px solid #ff4d4d; /* Червона рамка */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.errorIcon {
+  font-size: 48px; /* Розмір іконки */
+  color: #ff4d4d; /* Червоний колір іконки */
+  margin-bottom: 10px;
+}
+
+.errorText {
+  font-size: 18px; /* Розмір тексту */
+  color: #333; /* Темний текст */
+  text-align: center;
+  line-height: 1.5; /* Інтервал між рядками */
+  margin: 0;
+}

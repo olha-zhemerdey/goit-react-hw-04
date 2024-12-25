@@ -1,0 +1,38 @@
+.itemsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Відстань між картками */
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.cardItem {
+  width: 300px; /* Фіксована ширина для карток */
+  background-color: #213547;
+  color: #ffffff;
+  border-radius: 12px; /* Заокруглення кутів */
+  overflow: hidden; /* Приховує вихідні елементи */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Початкова тінь */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Плавна анімація */
+  cursor: pointer;
+}
+
+.cardItem img {
+  width: 100%; /* Займає всю ширину картки */
+  height: 200px; /* Фіксована висота */
+  object-fit: cover; /* Обрізання без спотворення */
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1); /* Тонка лінія для розділення */
+}
+
+.cardItem:hover {
+  transform: scale(1.05); /* Легке збільшення при наведенні */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Глибша тінь при наведенні */
+}
+
+@media (max-width: 768px) {
+  .cardItem {
+    width: 100%; /* Картка займає всю ширину на мобільних */
+    max-width: 350px; /* Максимальна ширина для елементів */
+  }
+}

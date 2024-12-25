@@ -1,0 +1,37 @@
+.searchForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 500px;
+  margin: 20px auto; /* Центрування і відступи зверху та знизу */
+}
+
+.searchInput {
+  padding: 8px 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.searchInput:focus {
+  border-color: #175e52;
+  box-shadow: 0 0 8px rgba(23, 94, 82, 0.5); /* Легка тінь при фокусі */
+  outline: none;
+}
+
+.searchForm button {
+  padding: 8px 16px;
+  margin-left: 8px; /* Відступ між кнопкою і полем вводу */
+  font-size: 14px;
+  background-color: #175e52;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.searchForm button:hover {
+  background-color: #0d3b33; /* Темніший відтінок при наведенні */
+}
